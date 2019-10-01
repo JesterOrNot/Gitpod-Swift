@@ -1,12 +1,14 @@
 FROM gitpod/workspace-full
 
-USER root
+USER gitpod
 
-# Install custom tools, runtime, etc. using apt-get
-# For example, the command below would install "bastet" - a command line tetris clone:
-#
-# RUN apt-get update \
-#    && apt-get install -y bastet \
-#    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-#
-# More information: https://www.gitpod.io/docs/42_config_docker/
+# Install Swift dependencies
+RUN sudo apt-get update -q && \
+    sudo apt-get install -yq libtinfo5 && \
+    sudo rm -rf /var/lib/apt/lists/*
+
+# Install Swift
+RUN mkdir -p /home/gitpod/.swift && \
+    cd /home/gitpod/.swift && \
+    curl -fsSL https://swift.org/builds/swift-5.1-release/ubuntu1804/swift-5.1-RELEASE/swift-5.1-RELEASE-ubuntu18.04.tar.gz | tar -xzv
+ENV PATH="$PATH:/home/gitpod/.swift/swift-5.1-RELEASE-ubuntu18.04/usr/bin"
