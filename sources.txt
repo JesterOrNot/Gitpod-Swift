@@ -1,3 +1,2 @@
 https://marketplace.visualstudio.com/items?itemName=Kasik96.swift
-https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swift-development-environment
 https://github.com/apple/sourcekit-lsp
