@@ -4,7 +4,7 @@ USER gitpod
 
 # Install Swift dependencies
 RUN sudo apt-get update -q && \
-    sudo apt-get install -yq libtinfo5 && \
+    sudo apt-get install -yq libtinfo5 libncurses5 && \
     sudo rm -rf /var/lib/apt/lists/*
 
 # Install Swift
