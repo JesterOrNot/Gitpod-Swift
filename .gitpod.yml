@@ -5,5 +5,9 @@ vscode:
   extensions:
     - Kasik96.swift@0.1.0:Q5PBUv3yxGt0LugfEN0nsg==
     - vknabel.vscode-swift-development-environment@2.8.1:Y9Wh/nFOphmlcyX2i+u/oA==
+    - unpublished.sourcekit-lsp@0.0.1:NJBDyUtdIfPBJcBUYsntWQ==
 tasks:
 - command: swift --version
+vscode:
+  extensions:
+    - unpublished.sourcekit-lsp@0.0.1:NJBDyUtdIfPBJcBUYsntWQ==
