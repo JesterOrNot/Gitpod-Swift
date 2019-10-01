@@ -8,6 +8,3 @@ vscode:
     - unpublished.sourcekit-lsp@0.0.1:NJBDyUtdIfPBJcBUYsntWQ==
 tasks:
 - command: swift --version
-vscode:
-  extensions:
-    - unpublished.sourcekit-lsp@0.0.1:NJBDyUtdIfPBJcBUYsntWQ==
