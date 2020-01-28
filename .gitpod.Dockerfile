@@ -3,8 +3,11 @@ FROM gitpod/workspace-full
 USER gitpod
 # Install Swift dependencies
 RUN sudo apt-get update -q && \
-    sudo apt-get install -yq libtinfo5 libcurl4-openssl-dev libncurses5 && \
-    sudo rm -rf /var/lib/apt/lists/*
+    sudo apt-get install -yq libtinfo5 \
+        libcurl4-openssl-dev \
+        libncurses5 \
+        libpython2.7 \
+    && sudo rm -rf /var/lib/apt/lists/*
 
 # Install Swift
 RUN mkdir -p /home/gitpod/.swift && \
