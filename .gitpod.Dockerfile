@@ -14,8 +14,6 @@ RUN sudo apt-get update -q && \
         libsqlite3-0 \
         libc6-dev \
         binutils \
-        libgcc-5-dev \
-        libstdc++-5-dev \
         libpython2.7 \
         tzdata \
         git \
