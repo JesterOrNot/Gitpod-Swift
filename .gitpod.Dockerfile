@@ -7,6 +7,19 @@ RUN sudo apt-get update -q && \
         libcurl4-openssl-dev \
         libncurses5 \
         libpython2.7 \
+        libatomic1 \
+        libcurl4 \
+        libxml2 \
+        libedit2 \
+        libsqlite3-0 \
+        libc6-dev \
+        binutils \
+        libgcc-5-dev \
+        libstdc++-5-dev \
+        libpython2.7 \
+        tzdata \
+        git \
+        pkg-config \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Install Swift
